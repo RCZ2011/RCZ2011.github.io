@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Petit Livre De L'électricité</title>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			width: 50em;
+			margin: auto;
+			text-align: justify;
+			text-rendering: optimizeLegibility;
+			font-kerning: normal;
+			font-variant-ligatures: common-ligatures;
+			text-justify: inter-character;
+			hyphens: auto;
+			counter-reset: sections figures;
+		}
+		h1 {
+			text-align: center;
+			font-size: 400%;
+			color: darkblue;
+			text-shadow: 5px 7px 3px darkgrey;
+
+		}
+		h2.sous-titre {
+			font-size: 200%;
+			text-align: center;
+			color: #444499;
+			text-shadow: 5px 5px 3px darkgrey;
+		}
+		h3.sous-titre {
+			text-align: center;
+			font-size: 75%;
+		}
+		h2.titre-section {
+			counter-increment: sections;
+		}
+		h2.titre-section::before {
+			content: counter(sections) ". ";
+		}
+		figure {
+			max-width: 100%;
+			text-align: center;
+			margin: auto;
+			counter-increment: figures;
+		}
+		figure img {
+			max-width: 100%;
+		}
+		h3.titre-section {
+			counter-increment: sections;
+		}
+		h3.titre-section::before {
+			content: counter(sections);
+		}
+
+		figcaption {
+			text-align: justify;
+			width: max-content;
+			margin: auto;
+			font-style: italic;
+		}
+		figcaption::before {
+			content: "Figure " counter(figures) " : ";
+		}
+		h4.sous-titre {
+			text-align: center;
+			font-style: italic;
+			font-size: 140%
+		}
+		footer {
+			border-top: 1px solid grey;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<h1>Le Petit Livre De L’électricité</h1>
+	<h3 class="sous-titre">par Rémi</h3>
+	<h4 class="sous-titre">Introduction</h4>
+	<p><em>Ce livre va vous expliquer tout un tas de chose sur l'électricité sans entrer dans des choses compliquées ou dans des formules de mathématique trop compliquées pour vous.</em></p>
+	<h2 class="sous-titre">Les Principes De L’électricité </h2>
+	<section>
+		<h2 class="titre-section">L'électricité</h2>
+		<p>Il existe plusieurs sortes de courants&#x202F;: les courants en continu et les courants alternatifs.</p>
+		<p>Un courant électrique est la circulation d'électrons libres au milieu de deux positions d'un corps conducteur. Les électrons sont des particules qui tournent autour d'un noyau. Un peut comme un satellite en orbite autour d'une planète. le noyau plus tout ses électrons qui orbitent autour de lui forment un atome. On appellent électron libre un électron qui peut se détacher aisément de son atome.</p>
+		<p>Un circuit électrique est souvent composé d’une batterie électrique ou d’un générateur et d’un (ou plusieurs) composant(s) électrique(s)(des ampoules, des moteurs électriques, des buzzers...). Voici schema electrique simple :</p>
+		<figure id="schema-simple">
+			<img src="schéma%20électrique%20simple.svg" alt="Schéma électrique basique" />
+			<figcaption>Un schéma électrique simple constitué d’une pile et d’une ampoule</figcaption>
+		</figure>
+		<p><strong><em>Le générateur :</em></strong></p>
+		<p>Un générateur est une machine qui produit de l'électricité (une pile électrique, une batterie, une centrale électrique, panneau solaire...). Un générateur est équipé de deux bornes : une borne - et une borne + pour ce qui produisent un courant en continu et un phase et un neutre pour les courants alternatifs. Les électrons vont de la borne - à la borne +. Mais comment fonctionne un générateur ??? Pour que le générateur produise de l'électricité, il contient un dispositif qui fait trop d'électron d'un coté, et pas assé de l'autre.</p>
+		<figure id="autodraw">
+			<img src="3ème%20schéma%20électrique%20très%20simple.png" />
+			<figcaption>Un schéma électrique montrant les électrons passés de la borne - à la borne + d'un générateur en continu</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h2 class="titre-section">L’intensité, la tension, la résistance et la puissance électrique</h2>
+		<p>Un composant électrique (et aussi les fils électriques) ont une résistance. Mais qu'est-ce la résistance&#x202F;? La résistance peut être deux choses&#x202F;: cela peut être un objet qui diminue la tension électrique, ou ce qui s’oppose au courant électrique (plus un objet à de résistance, plus l’objet diminue la tension électrque). La résistance s'exprime en ohms.</p>
+		<p>Qu'est ce que la tension électrique&#x202F;? La tension électrique est une différence de charge entre la borne - et la borne +.<br>La tension électrique s'exprime en volt.</p>
+	</section>
+	<section>
+		<h2 class="titre-section">Les effets de l'électricité</h2>
+		<figure id="L-effet-magnétique">
+			<img src="L'effet%20magnétique.png">
+			<figcaption>schéma d'effet magnétique</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h2 class="titre-section">Les risques</h2>
+		<p><strong><em>Le court circuit</em></strong></p>
+		<figure id="court-circuit">
+			<img src="court%20circuit222.png">
+			<figcaption>Image de court circuit</figcaption>
+		</figure>
+		<p>En courant alternatif, un court circuit se produit lorsque le phase et le neutre sont reliés par un élément de corps conducteur. Pour les courant en continue, il suffit que la borne - et la borne + soit reliés par un élément de corps conducteur pour qu'il se produise un court circuit.</p>
+		<p><strong><em>La surcharge</em></strong></p>
+		<p>Une surcharge se produit quand il y a trop d'apareils reliés sur le même générateur.</p>
+
+	</section>
+
+	<footer>
+		<p>Fin du document. Rémi Caitucoli Zimmermann. <strong> Tout droit réservé.</strong></p>
+	</footer>
+</body>
+</html>
